@@ -83,9 +83,8 @@ def build_model():
     
     # hyperparameters for the Random forrest classifier 
     parameters = {
-        "clf__estimator__n_estimators": [50, 100, 200],
-        "clf__estimator__criterion": ['gini', 'entropy'],
-        "clf__estimator__max_depth": [2, 5]
+        "clf__estimator__n_estimators": [10, 50, 100, 200, 500],
+        "clf__estimator__max_depth": [2, 3, 5, 8]
     }
     
     # run cross validation
